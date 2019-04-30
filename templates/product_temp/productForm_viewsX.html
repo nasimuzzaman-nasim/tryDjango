@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block check %}
+<!--<form action="https://www.google.com/search" method="GET"> {% csrf_token %}
+  <input type="text" name="q" placeholder="Your Search"/>
+  <input type="Submit" name="" value="Search"/>
+</form>-->
+
+<form action='.' method='POST'> {% csrf_token %}
+	<li>Title: <input type="text" placeholder="Your title"/> </li>
+	<li>Desc : <input type="text" placeholder="Your description"/> </li>
+	<li>Price: <input type="text" placeholder=""/> </li>
+	<li>       <input type="submit" value="Store"/> </li>
+</form>
+{% endblock %}

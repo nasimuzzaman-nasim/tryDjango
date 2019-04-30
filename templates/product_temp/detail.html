@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block check %}
+
+{{qs}}
+{% for qs in obj %}
+	  <ul> ID: {{qs.id}} </ul>
+      <ul> Tilte: {{qs.title}} </ul>
+      <ul>  {%if qs.desc %} Desc : {{qs.desc}}  {% endif %}</ul>
+      <ul> Price: {{qs.price}} </ul>
+      <br>
+      <br>
+{% endfor %}
+{% endblock %}

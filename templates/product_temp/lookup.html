@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block check%}
+<h1> {{obj.title}} </h1>
+<p>{{obj.desc}}</p>
+<p>{{obj.price}}</p>
+
+<p> <a href='{{ obj.get_absolute_url_edit }}'> <button type="button"> Edit </button> </a> 
+ <a href='{{ obj.get_absolute_url_delete }}'> <button type="button"> Delete </button> </a>
+ <a href="../"> <button type="button"> Back </button> </a>
+</p>
+
+{% endblock %}
+
+<!--{{ instance.get_absolute_url1 }}-->

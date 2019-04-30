@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	 {% load static %}
+  <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+	<title>Coding is fun!</title>
+	<h1 style="text-align:center;"> Base Header </h1>
+
+</head>
+<body>
+	{% block check %}
+	{% endblock %}
+
+	<!--{% include 'navbar.html' %}-->
+	<br><br><br><br><br><br><br>
+
+	<div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+
+	<p> Server Time : {% now "jS N Y H:i" %} </p>
+	<p style="text-align: right;"> Made with 💜 by Nasim </p>
+
+	
+
+</body>
+</html>

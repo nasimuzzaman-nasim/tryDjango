@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block check %}
+<h1 style="text-align: center; color:Tomato;">Hello PC!</h1>
+<h2 style="text-align: center; color:Black;">You are my world!</h2>
+
+{{title|safe|title}}
+
+<p>
+	<li>
+{{a|capfirst}},{{b|upper}},{{c}}
+</li>
+</p>
+<ul>
+	{% for i in lis %}
+		<li> {{ forloop.counter}}: {{i}} </li>
+	{% endfor %}
+</ul>
+
+<ul>
+	<a href="#noob"> Item 1 </a>
+</ul>
+{% endblock %}

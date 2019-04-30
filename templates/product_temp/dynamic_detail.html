@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block check %}
+{% for instance in queryset %}
+	<p> {{instance.id}} : <a href="{{ instance.get_absolute_url_lookup }}">{{instance.title}}</a> </p>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block check %}
+<h1 style="color:Tomato; text-align: center">Hello PC!</h1>
+<h2 style="color:Red; text-align: center">You are my world!</h2>
+
+ <div>
+ 	<ul>
+ 		<button type="button"> <a href='{{ get_absolute_url_add }}'> Add Product </a> </button>
+ 		<button type="button"> <a href="detail/"> View Products </button>
+ 	</ul>
+ 	
+ </div>
+
+{% endblock %}
+
+
+<!-- {{ get_absolute_url_add }} -->
